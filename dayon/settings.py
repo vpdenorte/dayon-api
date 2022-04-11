@@ -47,11 +47,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'apis.apps.ApisConfig',
-    # 'corsheaders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
-    # 'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -137,9 +137,10 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS_ORIGIN_WHITELIST = [
-#     'http://localhost:8080'
-# ]
+CORS_ORIGIN_WHITELIST = [
+    'https://dayon.herokuapp.com',
+    'http://localhost:8080',
+]
 
 # Heroku: Update database configuration from $DATABASE_URL.
 
