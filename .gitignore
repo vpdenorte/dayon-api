@@ -1,0 +1,12 @@
+.DS_Store
+.vagrant/
+.vscode/
+
+dist/
+node_modules/
+*.log
+
+__pycache__/
+migrations/
+db.sqlite3
+*.pyc
